@@ -10,7 +10,7 @@ The solver is designed for GPU acceleration, vectorized operations, and flexible
 
 ## 1. Base Module — Radiative Heat Simulation
 
-**File:** `radiative_gpu.py`
+**File:** `MCRGPU.py`
 
 **Description:**  
 Implements a Monte Carlo solver for radiative energy exchange between walls of a 3D box with a hot emitter patch.
@@ -30,7 +30,7 @@ Implements a Monte Carlo solver for radiative energy exchange between walls of a
 
 ## 2. Spectral Monte Carlo Extension
 
-**File:** `radiative_gpu_spectral.py`
+**File:** `SMCRGPU.py`
 
 **Description:**  
 Adds **spectral sampling** of photon wavelengths according to Planck’s law (blackbody radiation).  
@@ -49,7 +49,7 @@ This extension introduces wavelength-dependent optical properties.
 
 ## 3. Tabulated Spectral Emissivity
 
-**File:** `emissivity_tables.py`
+**File:** `TSEMCGPU.py`
 
 **Description:**  
 Provides a modular emissivity model that can be directly plugged into the spectral tracer.  
